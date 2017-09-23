@@ -6,6 +6,8 @@ puts name + " " + state
 
 puts name.class
 
+puts name * 2 # multiplication concats a list of the numbers of the string being multiplied and the oposite doesnt work e.g(2 * name, name is not a number so it cant be multiplied)
+
 #print name.methods
 
 #variables dont point to variables, they poit to their values(or their assigment in memory) e.g:
@@ -30,23 +32,5 @@ puts "".empty?
 puts "Enter your job: "
 job = gets.chomp
 puts "You are a #{job}"
-
-def nameLength(nome, sobrenome)
-    return nome.length + sobrenome.length
-end
-
-def reverseName(nome, sobrenome)
-    return sobrenome.reverse +" "+ nome.reverse
-end
-
-
-#Homework
-puts "Enter your name: "
-nome  = gets.chomp
-puts "Enter your last name: "
-sobrenome = gets.chomp
-puts "Weolcome to the analyzer"
-puts "Your name lenth is: #{nameLength(nome,sobrenome)}"
-puts "Your name in reverse is: #{reverseName(nome,sobrenome)}"
 
 
